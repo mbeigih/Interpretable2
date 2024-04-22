@@ -19,3 +19,4 @@ file.remove("interpretable-ml.Rmd")
 bookdown::render_book('', 'bookdown::gitbook')
 
 browseURL('_book/index.html')
+

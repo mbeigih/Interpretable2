@@ -11,8 +11,8 @@ effect_plot = function(mod, dat,  feature_names=NULL){
     geom_hline(yintercept=0, linetype=4) +
     geom_boxplot(aes(x=key, y=value, group=key)) +
     coord_flip() +
-    scale_y_continuous('Feature effect') +
-    my_theme()
+    scale_y_continuous('Feature effect')# +
+    #my_theme()
 }
 
 get_reference_dataset = function(dat){

@@ -1,6 +1,13 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+editor_options: 
+  markdown: 
+    wrap: sentence
+---
 
-
-# Summary {-}
+# Summary {.unnumbered}
 
 ```{r setup, cache=FALSE, include=FALSE}
 devtools::load_all()
@@ -29,7 +36,6 @@ How can their outputs be interpreted?
 This book will enable you to select and correctly apply the interpretation method that is most suitable for your machine learning project.
 Reading the book is recommended for machine learning practitioners, data scientists, statisticians, and anyone else interested in making machine learning models interpretable.
 
-
 `r if(is.html){"You can buy the PDF and e-book version (epub, mobi) [on leanpub.com](https://leanpub.com/interpretable-machine-learning)."}`
 
 `r if(is.html){"You can buy the print version [on amazon](https://bookgoodies.com/a/B09TMWHVB4)."}`
@@ -37,7 +43,8 @@ Reading the book is recommended for machine learning practitioners, data scienti
 **About me:** My name is Christoph Molnar, I'm a statistician and a machine learner.
 My goal is to make machine learning interpretable.
 
-Follow me on Twitter! [\@ChristophMolnar](https://twitter.com/ChristophMolnar)
+Follow me on Twitter!
+[\@ChristophMolnar](https://twitter.com/ChristophMolnar)
 
 Cover by [\@YvonneDoinel](https://twitter.com/YvonneDoinel)
 
@@ -48,8 +55,6 @@ knitr::include_graphics("images/by-nc-sa.png")
 Also checkout [Modeling Mindsets](https://bookgoodies.com/a/B0BMGSF52B), my second book.
 
 This book is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
-
-
 
 # Preface by the Author
 
@@ -66,6 +71,7 @@ I ended up writing the book I wished was available when I began my study of inte
 My intention with this book was twofold: to learn for myself and to share this new knowledge with others.
 
 <!-- Introduction to Author -->
+
 I received my bachelor's and master's degree in statistics at the LMU Munich, Germany.
 Most of my knowledge about machine learning was self-taught through online courses, competitions, side projects and professional activities.
 My statistical background was an excellent basis for getting into machine learning, and especially for interpretability.
@@ -115,7 +121,7 @@ The increased need for machine learning interpretability is a natural consequenc
 This book has become a valuable resource for many people.
 Teaching instructors use the book to introduce their students to the concepts of interpretable machine learning.
 I have received e-mails from several Master's students and Ph.D. students who told me that this book was the starting point and most important reference for their theses.
-The book has helped applied researchers in the fields of ecology, finance, psychology, etc.  who use machine learning to understand their data.
+The book has helped applied researchers in the fields of ecology, finance, psychology, etc. who use machine learning to understand their data.
 Data scientists from industry told me that they use the "Interpretable Machine Learning" book for their work and recommend it to their colleagues.
 I am happy that many people benefited from this book and become experts in model interpretation.
 
@@ -126,5 +132,3 @@ You should also have an understanding of entry level university mathematics to b
 It should also be possible, however, to understand the intuitive description of the method at the beginning of each chapter without mathematics.
 
 I hope you enjoy the book!
-
-

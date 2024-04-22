@@ -11,7 +11,7 @@ get.bike.data = function(data_dir){
   bike$yr[bike$yr == 0] = 2011
   bike$yr[bike$yr == 1] = 2012
   bike$yr = factor(bike$yr)
-  bike$days_since_2011 = day_diff(bike$dteday, min(as.Date(bike$dteday)))
+  #bike$days_since_2011 = day_diff(bike$dteday, min(as.Date(bike$dteday)))
 
   # denormalize weather features:
   # temp : Normalized temperature in Celsius. The values are derived via (t-t_min)/(t_max-t_min), t_min=-8, t_max=+39 (only in hourly scale)
