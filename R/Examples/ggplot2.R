@@ -1,0 +1,23 @@
+library(ggplot2)
+
+ggplot(bike,aes(x=temp,y=cnt))+geom_point()
+ggplot(bike,aes(x=temp,y=cnt))+geom_curve()
+ggplot(bike,aes(x=temp,y=cnt))+geom_path()
+ggplot(bike,aes(x=temp,y=cnt))+geom_polygon()
+ggplot(bike,aes(x=temp,y=cnt))+geom_rect()
+ggplot(bike,aes(x=temp,y=cnt))+geom_ribbon()
+ggplot(bike,aes(x=temp,y=cnt))+geom_abline()
+ggplot(bike,aes(x=temp,y=cnt))+geom_hline()
+ggplot(bike,aes(y=cnt))+geom_area(stat = "bin")
+ggplot(bike,aes(x=temp))+geom_density(kernel="gaussian")
+ggplot(bike,aes(x=temp))+geom_dotplot()
+ggplot(bike,aes(x=temp))+geom_freqpoly()
+ggplot(bike,aes(x=temp))+geom_histogram()
+ggplot(bike,aes(x=temp,y=cnt))+geom_qq()
+ggplot(bike,aes(x=season))+geom_bar()
+ggplot(bike,aes(x=temp,y=cnt))+geom_point()
+
+ggplot(bike,aes(x=temp,y=cnt))+geom_label(aes(label=season))
+ggplot(bike,aes(x=temp,y=cnt))+geom_label(aes(color=season))
+ggplot(bike,aes(x=temp,y=cnt))+geom_label(aes(label=season))
+
