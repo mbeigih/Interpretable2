@@ -2,25 +2,25 @@
 help.search('weighted mean')
 help(package = 'iml')
 data(iris)
+load("C:/Users/Mohsen/Documents/GitHub/Interpretable2/R/interpretable-ml-book-master/interpretable-ml-book-master/data/bike.RData")
 str(iris)
 class(iris)
 install.packages('iml')
 library('iml')
 tidyr::gather(X)
 data("iris")
-load("C:/Users/Mohsen/Documents/GitHub/Interpretable2/R/interpretable-ml-book-master/interpretable-ml-book-master/data/bike.RData")
 getwd()
 setwd("C://Users/Mohsen/Documents/GitHub/Interpretable2/R/interpretable-ml-book-master/interpretable-ml-book-master/manuscript")
 c(2, 4, 6)
 2:6
 rep(1:2, times = 3)
 rep(1:2, each = 3)
-sort(bike$cnt)
-table(bike$season)
-rev(c(1, 2, 3))
+sort(bike$cnt) #vs order() sort(sample(1:100, 10)) order(sample(1:100, 10))
+table(bike$season) #table(bike$season, bike$yr)
+rev(c(1, 2, 3)) #Reverse Elements
 unique(bike$season)
 bike$season[1]
-bike$season[-1]
+bike$season[-1] #All except first
 bike$season[2:4]
 bike$season[-(2:4)]
 bike$season[c(1, 5)]
@@ -42,7 +42,7 @@ m <- matrix(1:9, nrow = 3, ncol = 3)
 m[2, ]
 t(m)
 m %*% m
-solve(matrix((rep(1, times = 9)), nrow = 3, ncol = 3), c(6, 15, 24))
+solve(matrix((sample(1:9, 9)), nrow = 3, ncol = 3), c(3, 3, 3))
 l <- list(x = 1:5, y = c('a', 'b'))
 l[[2]]      
 l[1]
@@ -56,8 +56,8 @@ View(df)
 nrow(df)
 ncol(df)
 dim(df)
-cbind() # Bind columns.
-rbind() # Bind rows
+cbind() # Bind columns cbind(c(1, 2, 3), c(1, 4, 5))
+rbind() # Bind rows rbind(c(1, 2, 3), c(1, 4, 5))
 factor(bike$season)
 cut(bike$temp, breaks = 4) 
 bike.features.of.interest = c('season','holiday', 'workingday', 'weathersit', 'temp', 'hum', 'windspeed', 'days_since_2011')

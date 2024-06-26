@@ -1,19 +1,16 @@
 x <- 'hello world'
 y = 5.4
 state = FALSE
+x
 print(x)
 cat(state)
 typeof(state)
 sum <- 0
 for (i in 1:100) {
-  sum <- sum + 1
+  sum <- sum + i
 }
 
-sum <- 0
-while (i <= 100) {
-  sum <- sum + i
-  i <- i + 1
-}
+
 
 for (i in 1:100) {
   if (i %% 2 == 0){
@@ -90,7 +87,7 @@ list(one = 1, four = 4, vector = c(1, 2, 3))
 l$vector[1]
 #matrix
 ?matrix
-M <- matrix(1:30, 5, 6)
+M <- matrix(1:30, 5, 6, byrow = T)
 M[1]
 M[30]
 M[6]
@@ -121,6 +118,7 @@ x <- sample(1:100, 10)
 is.na(x)
 x[11] = NA
 is.na(x)
+#dplyr package isna
 mobile[!is.na(mobile$season),] -> mobile_notna
 View(mobile_notna[order(mobile_notna$temp),])
 nrow(mobile_notna[order(mobile_notna$temp),])
@@ -131,6 +129,7 @@ mean(mobile$temp, na.rm = T)
 
 #visualization
 library(ggplot2)
+#grammer of ghraphics
 ?mpg
 ggplot(data = mpg)+
   geom_point(mapping = aes(y=hwy, x=displ))#geom:geometric object aes:statis scaterplot parakonesh
